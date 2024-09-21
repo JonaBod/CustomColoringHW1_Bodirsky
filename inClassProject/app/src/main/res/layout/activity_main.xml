@@ -110,6 +110,8 @@
                 android:id="@+id/seekMin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:min="50"
+                android:max="1000"
                 android:layout_weight="6" />
         </LinearLayout>
 
@@ -123,6 +125,8 @@
                 android:id="@+id/seekMax"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:min="0"
+                android:max="1000"
                 android:layout_weight="6" />
         </LinearLayout>
 
@@ -176,7 +180,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
-                android:onClick='incrementMe'
+
                 android:text="Update Count" />
 
             <Button
