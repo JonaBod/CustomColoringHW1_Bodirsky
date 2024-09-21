@@ -7,9 +7,6 @@ public class CakeModel {
     public boolean hasFrosting = false;
     public boolean hasCandles = true;
 
-    public CakeModel(){
-
-    }
 
     // Getter method to check candleLit state
     public boolean isCandleLit() {
