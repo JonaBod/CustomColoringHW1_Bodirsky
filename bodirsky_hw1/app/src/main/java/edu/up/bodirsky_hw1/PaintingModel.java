@@ -1,5 +1,8 @@
+// unused
+
 package edu.up.bodirsky_hw1;
 
+import android.graphics.Color;
 import android.widget.TextView;
 
 public class PaintingModel {
@@ -11,6 +14,12 @@ public class PaintingModel {
 
 
     // RGB getter and setter methods
+
+    // use to update colors of object with seekbar sliders
+    protected void rgbPaint(){
+        int color = Color.rgb(0,0,0); //input values as ints in steps of 256
+    }
+
 
     // Getter method to check redShade
     public int getRedShade() {

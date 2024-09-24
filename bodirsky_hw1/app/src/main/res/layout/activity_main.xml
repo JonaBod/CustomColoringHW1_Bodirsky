@@ -9,35 +9,51 @@
     android:orientation="horizontal">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_weight="1">
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp"
+        android:layout_weight="3"
+        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Element: " />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_weight="6">
-
-        <SurfaceView
+        <edu.up.bodirsky_hw1.PaintingView
             android:id="@+id/paintingView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_weight="1">
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="20sp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Element:  "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvElement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="sample Square"
+                android:textSize="20sp" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -46,16 +62,18 @@
 
             <TextView
                 android:id="@+id/tvRed"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
                 android:layout_weight="1"
-                android:text="Red" />
+                android:text="Red"
+                android:textColor="#FD0000"
+                android:textSize="20sp" />
 
             <SeekBar
                 android:id="@+id/seekRed"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="4" />
+                android:layout_weight="3" />
         </LinearLayout>
 
         <LinearLayout
@@ -65,16 +83,18 @@
 
             <TextView
                 android:id="@+id/tvGreen"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Green" />
+                android:text="Green"
+                android:textColor="#4CAF50"
+                android:textSize="20sp" />
 
             <SeekBar
                 android:id="@+id/seekGreen"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="4" />
+                android:layout_weight="3" />
         </LinearLayout>
 
         <LinearLayout
@@ -84,16 +104,18 @@
 
             <TextView
                 android:id="@+id/tvBlue"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Blue" />
+                android:text="Blue"
+                android:textColor="#2196F3"
+                android:textSize="20sp" />
 
             <SeekBar
                 android:id="@+id/seekBlue"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="4" />
+                android:layout_weight="3" />
         </LinearLayout>
     </LinearLayout>
 

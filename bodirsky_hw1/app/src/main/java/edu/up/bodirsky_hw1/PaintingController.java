@@ -1,3 +1,5 @@
+// unused
+
 package edu.up.bodirsky_hw1;
 
 import android.widget.SeekBar;
@@ -11,8 +13,9 @@ public class PaintingController implements SeekBar.OnSeekBarChangeListener{
     public PaintingController(PaintingView view){
         this.paintingView = view;
         this.paintingModel = paintingView.getPaintingModel();
-
     }
+
+
 
     @Override
     public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
