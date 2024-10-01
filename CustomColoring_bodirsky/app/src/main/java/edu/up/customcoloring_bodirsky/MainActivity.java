@@ -35,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         /*
-        External source:
+        External Citation
+        Problem: using the right syntax
         in class activity Nuxoll (lizard canvas)
          */
 
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         SeekBar seekBlue = findViewById(R.id.seekBlue);
 
         PaintingController paintingController = new PaintingController(paintingView);
+
 
         seekRed.setOnSeekBarChangeListener(paintingController);
         seekGreen.setOnSeekBarChangeListener(paintingController);
